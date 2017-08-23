@@ -37,3 +37,13 @@ In addition to being able to override the default WebView CSS, config parameters
 
 External language file can also be used to override the verbiage in the text strings presented in the UI. The sample ```en.json``` file overrides the ```enter_security_pin``` message (this message is presented to the existing user when they get to the PIN Entry Screen).
 
+## FitPay Terms and Conditions Translations
+In the translations json file (as shown in ```en.json```) specify the path to the translated terms and conditions html page for the resource ```"fitpay_terms_url"```. Currently, terms and conditions translations are provided by FitPay and will be an internal URL.
+
+The internal URLs are: 
+* English: ```"translations/fitPayTerms/en.html"```
+ * Other languages tbd
+
+For example, the english translation json file should contain ```"fitpay_terms_url":"translations/fitPayTerms/en.html"```
+
+If it does not contain this resource with a valid internal url the terms page will not render correctly.
