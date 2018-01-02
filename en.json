@@ -56,7 +56,6 @@
     "enter_security_pin": "Please Enter Your Security PIN",
     "expiration_year": "Expiration Year",
     "finish": "Finish",
-    "fitpay_terms_url": "translations/fitPayTerms/en.html",
     "generic_error": "Unable to reach server. Please check your internet connection and try again.",
     "get_terms_error": "Error getting issuer terms and conditions",
     "got_it": "Got it, thanks!",
