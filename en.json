@@ -26,8 +26,7 @@
         "zip_not_valid": "Zip Code is missing or invalid",
         "street_too_long": "Street must be less than 128 characters.",
         "city_too_long": "City must be less than 128 characters.",
-        "state_too_long": "State must not exceed 3 characters.",
-        "cardholder_name_format_error" : "Cardholder name must have first and last with at least two characters."
+        "state_too_long": "State must not exceed 3 characters."
       },
       "errors": {
         "device_loading": "We're sorry, there was an error while trying to load your card onto your device. Please try again.",
@@ -100,7 +99,6 @@
     "finish": "Finish",
     "fitpay_terms_url" : "translations/fitPayTerms/en.html",
     "generic_error": "Sorry, an error occurred",
-    "network_error": "Unable to reach server. Please check your internet connection and try again.",
     "get_terms_error": "Error getting issuer terms and conditions",
     "got_it": "Got it, thanks!",
     "incorrect_pin": "Sorry, the PIN you provided is incorrect.",
@@ -120,6 +118,7 @@
     "max_cards_reached": "Max Cards Reached",
     "max_cards_reached_message": "You reached the maximum number of allowable credit cards.",
     "month": "Month",
+    "network_error": "Unable to reach server. Please check your internet connection and try again.",
     "no_data_connection": "No data connection available",
     "ok": "OK",
     "otp": {
@@ -129,7 +128,9 @@
         "expired_code": "The code that was entered is expired",
         "incorrect_tav": "Sorry an error occured, please use a different method to authorize your card",
         "expired_session": "Your session has expired, please exit the wallet and try again",
-        "generic": "Sorry an error has occurred"
+        "generic": "Sorry an error has occurred",
+        "app_to_app_not_supported": "Sorry, app to app verification is not currently supported",
+        "app_to_app_declined": "Sorry, app to app verification was declined"
       }
     },
     "pending_verification": "Pending verification",
@@ -205,7 +206,8 @@
       "call_for_otp": "Call your bank's automated customer service for a verification code at",
       "call_for_otp_result": "Call your bank's automated customer service for a verification code at",
       "agent_call_cardholder": "Have your banks automated service call you to provide a one-time password",
-      "agent_call_cardholder_result": "Your request to have the automated service call you with a verification code has been submitted. You will receive a call from"
+      "agent_call_cardholder_result": "Your request to have the automated service call you with a verification code has been submitted. You will receive a call from",
+      "app_to_app": "Use the issuer application"
     },
     "verification_change_method": "Choose another verification method",
     "verification_code_enter": "Enter code",
@@ -252,12 +254,18 @@
     "address_city": "City",
     "address_city_placeholder": "New York",
     "address_state": "State",
-    "address_state_placeholder": "NY",
+    "address_state_placeholder": "",
     "address_country": "Country",
     "address_country_placeholder": "",
     "submit_additional_info": "Next",
     "countries": {
-      "US": "United States"
+      "US": {
+        "name": "United States",
+        "provinces": {
+          "NJ": "New Jersey",
+          "NM": "New Mexico"
+        }
+      }
     },
     "privacy_policy_loading_error": "Sorry, an error has occurred. We are currently unable to get the privacy policy. Please try again later.",
     "terms_loading_error": "Sorry, an error has occurred. We are currently unable to get the terms and conditions. Please try again later.",
