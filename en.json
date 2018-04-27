@@ -205,8 +205,8 @@
       "text_result": "A verification code has been texted to",
       "call_for_otp": "Call your bank's automated customer service for a verification code at",
       "call_for_otp_result": "Call your bank's automated customer service for a verification code at",
-      "agent_call_cardholder": "Have your banks automated service call you to provide a one-time password",
-      "agent_call_cardholder_result": "Your request to have the automated service call you with a verification code has been submitted. You will receive a call from",
+      "agent_call_cardholder": "Receive a call at the following phone number",
+      "agent_call_cardholder_result": "Your request to have the automated service call you with a verification code has been submitted. You will receive a call at",
       "app_to_app": "Use the issuer application"
     },
     "verification_change_method": "Choose another verification method",
