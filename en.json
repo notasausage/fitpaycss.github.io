@@ -69,6 +69,7 @@
     "card_status_cardholder_deactivated" : "Suspended by user",
     "card_status_issuer_deactivated" : "Suspended by issuer",
     "card_status_deactivated" : "Suspended",
+    "card_status_pending_device_update": "Pending device update",
     "card_validating": "Please wait while we validate your card...",
     "card_waiting_bank_activation": "Awaiting Bank Activation",
     "cards_loading_error": "This is kinda embarrassing, there was an error loading your credit cards.",
@@ -88,6 +89,12 @@
     "device_initialization_timeout": "Payment Device initilization timeout",
     "device_initializing": "Device initializing, please wait...",
     "device_initializing_wait": "Device initializing",
+    "device_updating": "Your device is updating",
+    "device_updating_status_header": "This may take a couple minutes. Please do not close your app.",
+    "device_update_failed": "Sorry, there was an error updating your device. Please try again later",
+    "device_update_time_remaining": "Estimated time remaining: ",
+    "device_update_minutes_label": "minutes",
+    "device_update_longer_than_usual": "This is taking longer than usual...",
     "email": "Email",
     "email_in_use": "We're sorry, that email address is already in use. Are you sure you don't already have an account?",
     "enter_email": "Enter your email address",
@@ -126,11 +133,13 @@
         "incorrect_code": "The code entered is incorrect, please try again",
         "exceeded_code_retries": "Maximum attempts have been exceeded, please select another verification method",
         "expired_code": "The code that was entered is expired",
-        "incorrect_tav": "Sorry an error occured, please use a different method to authorize your card",
+        "incorrect_tav": "Sorry an error occurred, please use a different method to authorize your card",
         "expired_session": "Your session has expired, please exit the wallet and try again",
         "generic": "Sorry an error has occurred",
         "app_to_app_not_supported": "Sorry, app to app verification is not currently supported",
-        "app_to_app_declined": "Sorry, app to app verification was declined"
+        "app_to_app_declined": "Sorry, app to app verification was declined",
+        "app_to_app_failure": "Sorry, app to app verification failed",
+        "not_available": "This verification method is not currently available. Please try again later or use a different verification method."
       }
     },
     "pending_verification": "Pending verification",
@@ -207,8 +216,10 @@
       "call_for_otp_result": "Call your bank's automated customer service for a verification code at",
       "agent_call_cardholder": "Receive a call at the following phone number",
       "agent_call_cardholder_result": "Your request to have the automated service call you with a verification code has been submitted. You will receive a call at",
-      "app_to_app": "Use the issuer application"
+      "app_to_app": "Use the issuer application",
+      "no_results": "No verification methods available"
     },
+    "verifications_load_error": "There was an error retrieving the user verification methods. Please try again.",
     "verification_change_method": "Choose another verification method",
     "verification_code_enter": "Enter code",
     "verification_empty_code": "Please enter verification code",
