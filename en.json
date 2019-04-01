@@ -4,7 +4,7 @@
     "accept": "Accept",
     "account_locked": "This account has been locked. Please check your email for further instructions.",
     "active": "Active",
-    "active_card_toggle": "Suspend card",
+    "active_card_toggle": "Suspend Card",
     "add_card": "Add a Card",
     "auth_error": "Sorry, it appears your email or PIN is invalid.",
     "auth_unknown_error": "Well this is embarrassing, an error occurred while trying to log you in.",
@@ -22,7 +22,7 @@
         "not_numeric": "This contains non-numeric characters.",
         "number_required": "Card number is required.",
         "pan_not_valid": "We're sorry. That does not look like a valid credit card number.",
-        "cvv_not_valid": "Security Code is missing or invalid",
+        "cvv_not_valid": "Security Code is invalid",
         "zip_not_valid": "Zip Code is missing or invalid",
         "street_too_long": "Street must be less than 128 characters.",
         "city_too_long": "City must be less than 128 characters.",
@@ -40,7 +40,14 @@
         "card_load_error": "Sorry, something went wrong when loading your card. Please try again later.",
         "card_deleted": "Your card could not be added to your wallet at this time. Please try again later.",
         "server_unavailable": "The server is temporarily unavailable. Please try again later.",
-        "max_card_type_exceeded": "You cannot add any more of this type of card. If you believe this message is in error, please reset your device."
+        "max_card_type_exceeded": "You have reached the maximum number of cards, of this type, allowed on your device.",
+        "generic_client_error": "An error occured, please make sure the information you provided is correct.",
+        "generic_missing_field": "An error occured due to a missing field.",
+        "generic_invalid_field": "An error occured due to an invalid field."
+      },
+      "info": {
+        "ccv_modal_content": "If your card has a Security Code then it is required to be entered. The Security Code is a short numeric code usually printed on the back of your card.",
+        "cvv_modal_close": "Close"
       }
     },
     "card_default": "Default Card",
@@ -95,6 +102,12 @@
     "device_update_time_remaining": "Estimated time remaining: ",
     "device_update_minutes_label": "minutes",
     "device_update_longer_than_usual": "This is taking longer than usual...",
+    "device_select_msg": "Select a device to add a new card to:",
+    "device_select_heading": "Device Selection",
+    "device_settings_heading": "Device Settings",
+    "device_heading": "Devices",
+    "device_default_msg": "The will be the default card associated to this device.",
+    "devices_loading_error": "This is kinda embarrassing, there was an error loading your devices.",
     "email": "Email",
     "email_in_use": "We're sorry, that email address is already in use. Are you sure you don't already have an account?",
     "enter_email": "Enter your email address",
@@ -127,6 +140,7 @@
     "month": "Month",
     "network_error": "Unable to reach server. Please check your internet connection and try again.",
     "no_data_connection": "No data connection available",
+    "not_applicable" : "N/A",
     "ok": "OK",
     "otp": {
       "errors": {
@@ -161,7 +175,7 @@
     "preparing": "Preparing",
     "privacy_policy": "Privacy Policy",
     "reset_device": "Reset Device and Suspend Tokens in my Wallet",
-    "reset_device_description": "This will erase all of the cards in your wallet and on your device. Please enter your PIN to confirm this action.",
+    "reset_device_description": "This will erase all of the cards in your wallet and on your device.",
     "reset_password_bad_link": "This reset password link is not valid. If you would like to request a new reset link click \"Reset PIN\"",
     "reset_wallet": "Reset My Wallet",
     "reset_wallet_empty_pin": "Please provide your PIN to reset your wallet.",
@@ -175,6 +189,8 @@
     "security_code_placeholder": "Security Code",
     "support": "Support",
     "suspend_msg": "Turning on will temporarily suspend this card.",
+    "suspend_card": "Suspend Card",
+    "unsuspend_card": "Unsuspend Card",
     "sync": {
       "statuses": {
         "connected": "Ready to sync with device.",
@@ -190,9 +206,17 @@
     "today": "Today",
     "transactions": "Transactions",
     "transaction_status": {
+      "approved": "Approved",
       "declined": "Declined",
-      "refunded": "Refunded",
-      "pending": "Pending"
+      "pending": "Pending",
+      "refunded": "Refunded"
+    },
+    "transaction_type": {
+      "aft": "AFT",
+      "atm_services": "ATM Services",
+      "atm_balance_inquiry": "ATM Balance Inquiry",
+      "cash_withdrawal": "Cash Withdrawal",
+      "oct": "OCT"
     },
     "try_again": "Try Again",
     "unknown_error": "We're so sorry, there appears to be a problem.",
@@ -217,7 +241,9 @@
       "agent_call_cardholder": "Receive a call at the following phone number",
       "agent_call_cardholder_result": "Your request to have the automated service call you with a verification code has been submitted. You will receive a call at",
       "app_to_app": "Use the issuer application",
-      "no_results": "No verification methods available"
+      "no_results": "No verification methods available",
+      "issuer_call_cardholder": "Receive a call from the issuer at the following phone number",
+      "issuer_call_cardholder_result": "Your request to have the issuer call you with a verification code has been submitted. You will receive a call at"
     },
     "verifications_load_error": "There was an error retrieving the user verification methods. Please try again.",
     "verification_change_method": "Choose another verification method",
