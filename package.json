@@ -5,8 +5,8 @@
     "license": "MIT License",
     "author": "Patrick Haney",
     "browserslist": [
-        "Android",
-        "iOS"
+        "Android >= 4",
+        "iOS >= 10"
     ],
     "devDependencies": {
         "ansi-colors": "^4.1.1",

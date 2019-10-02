@@ -15,7 +15,7 @@ gulp.task( 'clean' ).description = "Remove old files from the distribution folde
 gulp.task( 'dist',
     gulp.series(
         'clean',
-        scss,
+        css,
         images,
         fonts
     )
@@ -37,8 +37,17 @@ function clean( folder ) {
     }
 }
 
-function scss() {
-    // Do something
+// Compile the Sass files, autoprefix, and run the CSS through an optimizer
+function css() {
+    return gulp.src( 'src/scss/style.scss', { allowEmpty: true } )
+        // Compile Sass files
+        .pipe( sass( { precision: 10 } ).on( 'error', sass.logError ) )
+        // Auto-prefix CSS for cross-browser compatibility
+        .pipe( autoprefixer() )
+        // Optimize and minify the resulting CSS
+        .pipe( csso() )
+        // Output to the distribution folder
+        .pipe( gulp.dest( './dist/css/' ) );
 }
 
 function images() {
