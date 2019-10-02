@@ -49,9 +49,29 @@ function clean( folder ) {
     if( folder == distribution_folder ) {
         console.log( colors.red( 'Cleaning the ' + folder + ' folder...' ) );
         return del([
-            'dist/**/*'
+            './' + distribution_folder + '/**/*'
             // Negate the pattern to ignore files (add a comma above)
             //'!build/js/jquery.js.min'
+        ]);
+    } else if( folder == 'images' ) {
+        console.log( colors.red( 'Cleaning the ' + folder + ' folder...' ) );
+        return del([
+            './' + distribution_folder + '/img/**/*'
+        ]);
+    } else if( folder == 'css' ) {
+        console.log( colors.red( 'Cleaning the ' + folder + ' folder...' ) );
+        return del([
+            './' + distribution_folder + '/css/**/*'
+        ]);
+    } else if( folder == 'fonts' ) {
+        console.log( colors.red( 'Cleaning the ' + folder + ' folder...' ) );
+        return del([
+            './' + distribution_folder + '/fonts/**/*'
+        ]);
+    } else if( folder == 'language' ) {
+        console.log( colors.red( 'Cleaning the ' + folder + ' folder...' ) );
+        return del([
+            './' + distribution_folder + '/lang/**/*'
         ]);
     } else {
         console.log( colors.red( 'Cannot clean the ' + folder + ' folder, permission denied.' ) );
@@ -97,13 +117,33 @@ function language() {
 
 // Watch for file changes and refresh as needed
 function watch() {
+    console.log( colors.green( 'Watching for file changes...' ) );
     // Watch for CSS changes
-    gulp.watch( css_path + '**/*' )
-        .on( 'change', css() );
-    gulp.watch( images_path + '**/*' )
-        .on( 'change', images() );
-    gulp.watch( fonts_path + '**/*' )
-        .on( 'change', fonts() );
-    gulp.watch( language_path + '**/*' )
-        .on( 'change', language() );
+    gulp.watch( css_path + '**/*', function(cb) {
+        clean( 'css' );
+        console.log( colors.green( 'Rebuilding CSS...' ) );
+        css();
+        cb();
+    } );
+    // Watch for image changes
+    gulp.watch( images_path + '**/*', function(cb) {
+        clean( 'images' );
+        console.log( colors.green( 'Rebuilding images...' ) );
+        images();
+        cb();
+    } );
+    // Watch for font changes
+    gulp.watch( fonts_path + '**/*', function(cb) {
+        clean( 'fonts' );
+        console.log( colors.green( 'Rebuilding fonts...' ) );
+        fonts();
+        cb();
+    } );
+    // Watch for language changes
+    gulp.watch( language_path + '**/*', function(cb) {
+        clean( 'language' );
+        console.log( colors.green( 'Rebuilding language files...' ) );
+        language();
+        cb();
+    } );
 }
