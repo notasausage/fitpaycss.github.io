@@ -66,6 +66,9 @@ function images() {
         .pipe( gulp.dest( './' + distribution_folder + '/img/' ) );
 }
 
+// Prepare fonts for distribution
 function fonts() {
-    // Do something
+    return gulp.src( './' + source_folder + '/fonts/**/*', { allowEmpty: true } )
+        // Output to the distribution folder
+        .pipe( gulp.dest( './' + distribution_folder + '/fonts/' ) );
 }
