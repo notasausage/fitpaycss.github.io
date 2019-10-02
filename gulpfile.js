@@ -90,7 +90,9 @@ function fonts() {
 
 // Prepare language files for distribution
 function language() {
-    // Do something
+    return gulp.src( './' + source_folder + '/lang/**/*', { allowEmpty: true } )
+        // Output to the distribution folder
+        .pipe( gulp.dest( './' + distribution_folder + '/lang/' ) );
 }
 
 // Watch for file changes and refresh as needed
