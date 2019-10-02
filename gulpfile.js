@@ -3,6 +3,7 @@ var gulp = require( 'gulp' ),
     csso = require( 'gulp-csso' ),
     del = require( 'del' ),
     colors = require( 'ansi-colors' ),
+    imagemin = require( 'gulp-imagemin' ),
     autoprefixer = require( 'gulp-autoprefixer' );
 
 gulp.task( 'clean',
@@ -50,8 +51,13 @@ function css() {
         .pipe( gulp.dest( './dist/css/' ) );
 }
 
+// Prepare images for distribution
 function images() {
-    // Do something
+    return gulp.src( 'src/img/**/*', { allowEmpty: true } )
+        // Minify PNG, JPG, GIF, and SVG files
+        .pipe( imagemin() )
+        // Output to the distribution folder
+        .pipe( gulp.dest( './dist/img/' ) );
 }
 
 function fonts() {

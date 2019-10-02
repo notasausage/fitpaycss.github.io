@@ -1,6 +1,6 @@
 {
     "name": "fitpaycss-optimizer",
-    "version": "0.1.0",
+    "version": "0.5.0",
     "description": "A simple workflow to optimize FitPay CSS and images",
     "license": "MIT License",
     "author": "Patrick Haney",
@@ -14,6 +14,7 @@
         "gulp": "^4.0.0",
         "gulp-autoprefixer": "^7.0.0",
         "gulp-csso": "^3.0.1",
+        "gulp-imagemin": "^6.1.0",
         "gulp-sass": "^4.0.2"
     }
 }
