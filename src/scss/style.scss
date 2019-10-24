@@ -1,4 +1,26 @@
-// Styles to be included in the distribution stylesheet for FitPay screens
-body {
-    background-color: #fff;
-}
+@charset 'utf-8';
+
+@import
+    'base/normalize',
+    'base/base',
+    'base/typography';
+
+@import
+    'abstracts/variables',
+    'abstracts/functions',
+    'abstracts/mixins';
+
+@import
+    'components/buttons';
+
+@import
+    'layout/forms',
+    'layout/header';
+
+@import
+    'pages/home';
+
+// @import
+//     'vendors/...';
+
+@import 'shame';
