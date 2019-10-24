@@ -87,7 +87,7 @@ function css() {
         // Auto-prefix CSS for cross-browser compatibility
         .pipe( autoprefixer() )
         // Optimize and minify the resulting CSS
-        .pipe( csso() )
+        // .pipe( csso() )
         // Output to the distribution folder
         .pipe( gulp.dest( './' + distribution_folder + '/css/' ) );
 }
