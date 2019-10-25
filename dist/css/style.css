@@ -352,6 +352,10 @@ h5,
 h6 {
   font-family: "Sanomat Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+h1 {
+  font-size: 31px;
+  line-height: 1.129032258; }
+
 /* BUTTONS */
 button.fpg-btn {
   line-height: 1; }
