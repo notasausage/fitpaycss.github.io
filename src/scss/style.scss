@@ -1,14 +1,15 @@
 @charset 'utf-8';
 
 @import
-    'base/normalize',
-    'base/base',
-    'base/typography';
-
-@import
     'abstracts/variables',
     'abstracts/functions',
     'abstracts/mixins';
+
+@import
+    'base/normalize',
+    'base/base',
+    'base/fonts',
+    'base/typography';
 
 @import
     'components/buttons';

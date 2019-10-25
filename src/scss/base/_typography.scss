@@ -1,0 +1,21 @@
+/* TYPOGRAPHY */
+body,
+p,
+input,
+textarea,
+select,
+button {
+    font-family: $font-copy;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-headlines;
+}
+
+h4,
+h5,
+h6 {
+    font-family: $font-copy;
+}
