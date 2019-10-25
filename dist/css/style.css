@@ -335,7 +335,12 @@ input,
 textarea,
 select,
 button {
-  font-family: "Sanomat Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Sanomat Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px; }
+
+body,
+p {
+  line-height: 2.5; }
 
 h1,
 h2,
@@ -347,9 +352,32 @@ h5,
 h6 {
   font-family: "Sanomat Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+/* BUTTONS */
+button.fpg-btn {
+  line-height: 1; }
+  button.fpg-btn.fpg-btn-large {
+    background-color: #FA1E00;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-size: 19px;
+    padding: 21px 0 20px; }
+    button.fpg-btn.fpg-btn-large #submit-additionalInfo {
+      font-size: 0;
+      /* Collapse the original line */ }
+      button.fpg-btn.fpg-btn-large #submit-additionalInfo:after {
+        content: "Continue";
+        font-size: 19px; }
+
 /* HEADER */
 .fp-add-card-title-wrapper h1,
 .fp-wallet-title-wrapper h1,
 .fp-card-detail-title-wrapper h1 {
   background: transparent;
   border: 0; }
+
+/* FOOTER */
+button.fpg-btn.fpg-btn-large {
+  position: fixed;
+  bottom: 20px;
+  width: calc( 100vw - ( 20px * 2 ));
+  left: 20px; }

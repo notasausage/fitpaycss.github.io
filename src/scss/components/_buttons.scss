@@ -1,0 +1,21 @@
+/* BUTTONS */
+button.fpg-btn {
+    line-height: 1;
+
+    &.fpg-btn-large {
+        background-color: $color-red;
+        border-radius: 30px;
+        color: $color-white;
+        font-size: 19px;
+        padding: 21px 0 20px;
+
+        #submit-additionalInfo {
+            font-size: 0; /* Collapse the original line */
+
+            &:after {
+                content: "Continue";
+                font-size: 19px;
+            }
+        }
+    }
+}

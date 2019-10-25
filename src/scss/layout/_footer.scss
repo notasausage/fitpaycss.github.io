@@ -1,0 +1,7 @@
+/* FOOTER */
+button.fpg-btn.fpg-btn-large {
+    position: fixed;
+    bottom: 20px;
+    width: calc( 100vw - ( #{$gutter} * 2 ) );
+    left: $gutter;
+}
